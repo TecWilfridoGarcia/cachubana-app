@@ -1,7 +1,7 @@
-export const setUpProduct = (productId, orderId) =>({
-    type:'@@PRODUCT/TOGGLE_READY',
+export const setUpProduct = (productoId, ordenId) =>({
+    type:'@@PRODUCTS/TOGGLE_READY',
     payload:{
-        productId,
-        orderId
+        productId: productoId,
+        ordenId: ordenId
     }
 })

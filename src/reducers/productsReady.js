@@ -19,4 +19,5 @@ export default (state = readyProducts, action) => {
                 default:
                     return state;
             }
-};
+        };
+
