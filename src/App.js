@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 import { BrowserRouter, Route, Switch, NavLink } from 'react-router-dom';
 import store from './store';
-// import logo from '../public/logo.png';
 //components
 import Dashboard from './components/Dashboard';
 import Warehouse from './components/Warehouse';
@@ -16,8 +15,8 @@ class App extends Component  {
     <Provider store={store}>
       <BrowserRouter>
         <div>
-        <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-              <NavLink to="/" className="navbar-brand" activeClassName="active" exact={true}>Frubana</NavLink>
+        <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-warning">
+              <NavLink to="/" className="navbar-brand" activeClassName="active" exact={true}><img src="../public/logo.png" height="42" width="42" /></NavLink>
               <button
                 className="navbar-toggler"
                 type="button"

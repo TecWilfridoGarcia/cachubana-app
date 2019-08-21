@@ -7,12 +7,12 @@ const Dashboard = ({ routes }) => {
 
   return (
     <Fragment>
-      <div className="jumbotron">
+      <div className="jumbotron bg-danger">
         <div className="container">
-          <h1 className="display-3">Órdenes alistadas por ruta</h1>
+          <h1 className="display-3 text-light">Órdenes alistadas por ruta</h1>
           <hr />
           {Object.keys(routes).map((ruta) => (
-            <button key={ruta} type="button" className="btn ml-2 btn-primary">
+            <button key={ruta} type="button" className="btn ml-2 btn-success">
               {routes[ruta]} <span className="badge badge-light">0</span>
             </button>
           ))}

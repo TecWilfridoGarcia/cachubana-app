@@ -13,6 +13,10 @@ class OrderDetail extends React.Component {
   }
 
   mostrarProductosState = (product, orden) => {
+    const divStyle = {
+      color: 'white',
+      background: 'green',
+    };
     const { productsReady } = this.props;
     const productReady = productsReady.filter(productReady => {
       if (productReady.productId === product._id && orden._id === productReady.ordenId) {
@@ -23,7 +27,8 @@ class OrderDetail extends React.Component {
     }).length
 
     if (productReady) {
-      return 'Alistado';
+      
+      return 'Alistado', divStyle;
     } else {
       return 'No alistado';
     }

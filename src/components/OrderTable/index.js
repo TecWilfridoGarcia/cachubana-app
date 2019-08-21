@@ -47,7 +47,7 @@ class OrderTable extends React.Component {
               <td>{order.slot}</td>
               <td>{this.getPorcentaje(order)}</td>
               <td>
-                <Link to={`/orders/${order._id}`} className="btn btn-primary">ver la orden</Link>
+                <Link to={`/orders/${order._id}`} className="btn btn-success">ver la orden</Link>
               </td>
             </tr>
           ))}
